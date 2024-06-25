@@ -1,7 +1,16 @@
 import ListGroup from "./components/ListGroup";
 
 function App() {
-  return <div><ListGroup></ListGroup></div>
+  let items = ["New York", "Tokyo", "London", "Paris"];
+  return (
+    <div>
+      <ListGroup
+        items={items}
+        heading="Cities"
+        onSelectItem={(item) => console.log(item)}
+      ></ListGroup>
+    </div>
+  );
 }
 
 //Exporting a componet
